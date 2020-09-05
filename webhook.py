@@ -29,7 +29,7 @@ def parser_api():
             print(resume1)
             BUCKET_NAME = 'highporesume'
             LOCAL_FILE_NAME = 's3resumeTest1.pdf'
-            s3 = boto3.client('s3', aws_access_key_id='AKIAVAN3GMNKOBWJNO4Q', aws_secret_access_key='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')
+            s3 = boto3.client('s3', aws_access_key_id='xxxxxxxxxx', aws_secret_access_key='xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
             s3.download_file(BUCKET_NAME, resume1, LOCAL_FILE_NAME)
 
             path_to_resume = LOCAL_FILE_NAME
